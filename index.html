@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dr. Javier Flores | Medicina Estética en Cuautla · Agenda en línea</title>
+<meta name="description" content="Medicina estética en Cuautla, Morelos: toxina botulínica, ácido hialurónico, bioestimuladores, hilos y planes de pérdida de peso. Agenda tu cita en línea.">
+<meta property="og:title" content="Dr. Javier Flores | Medicina Estética">
+<meta property="og:description" content="Armonización facial natural con criterio médico y modelación con IA. Cuautla, Morelos.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/logo-gold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0d0b0c; --ink-2:#161214; --ink-3:#201a1c; --line:rgba(232,214,170,.16);
+  --ivory:#f7f2ea; --ivory-2:#ece4d6; --muted:#a69a8c;
+  --gold:#c9a45c; --gold-2:#e8d6aa; --wine:#7a1f2b; --wine-2:#a32d3d;
+  --glow:0 0 0 1px var(--line),0 30px 80px -30px rgba(201,164,92,.25);
+  --r:18px; --serif:'Cormorant Garamond',Georgia,serif; --sans:'Manrope',system-ui,sans-serif; --mono:'JetBrains Mono',monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--ivory);font-family:var(--sans);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:var(--mono);font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05;letter-spacing:-.01em}
+h2{font-size:clamp(2.2rem,5vw,3.6rem)}
+.gold{color:var(--gold-2)} .it{font-style:italic}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.95rem 1.5rem;border-radius:999px;font-weight:600;font-size:.92rem;border:1px solid transparent;cursor:pointer;transition:.3s;font-family:var(--sans)}
+.btn-gold{background:linear-gradient(135deg,var(--gold-2),var(--gold));color:var(--ink)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 14px 40px -10px rgba(201,164,92,.6)}
+.btn-ghost{border-color:var(--line);color:var(--ivory);background:rgba(255,255,255,.02)}
+.btn-ghost:hover{border-color:var(--gold)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:.3s}
+nav.scrolled{background:rgba(13,11,12,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:76px}
+.nav-in img{height:44px;width:auto}
+.links{display:flex;gap:2rem;font-size:.86rem;color:var(--ivory-2)}
+.links a:hover{color:var(--gold-2)}
+.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--ivory);border-radius:10px;padding:.5rem .7rem;cursor:pointer}
+@media(max-width:900px){.links{display:none}.links.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:var(--ink-2);padding:1.5rem 22px;gap:1.2rem;border-bottom:1px solid var(--line)}.menu-btn{display:block}.nav-cta{display:none}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 75% 40%,rgba(201,164,92,.16),transparent 70%),radial-gradient(40% 40% at 10% 90%,rgba(122,31,43,.28),transparent 70%)}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(70% 60% at 60% 40%,#000 20%,transparent 80%);-webkit-mask-image:radial-gradient(70% 60% at 60% 40%,#000 20%,transparent 80%);opacity:.35}
+.hero-in{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+.hero h1{font-size:clamp(3rem,7.5vw,6rem);margin:1.2rem 0 1.4rem}
+.hero p.lead{font-size:1.1rem;color:var(--ivory-2);max-width:520px;font-weight:300}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:2.2rem}
+.stats{display:flex;gap:2.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line)}
+.stats b{font-family:var(--serif);font-size:2.2rem;font-weight:500;color:var(--gold-2);display:block;line-height:1}
+.stats span{font-size:.78rem;color:var(--muted);letter-spacing:.05em}
+.hero-media{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/5;box-shadow:var(--glow)}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:saturate(.9) contrast(1.05)}
+.hero-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(13,11,12,.85))}
+.scan{position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold-2),transparent);box-shadow:0 0 20px var(--gold);animation:scan 4s ease-in-out infinite;z-index:2}
+@keyframes scan{0%,100%{top:8%}50%{top:88%}}
+.badge-float{position:absolute;z-index:3;bottom:22px;left:22px;right:22px;display:flex;justify-content:space-between;align-items:center;gap:.5rem;padding:1rem 1.2rem;border-radius:14px;background:rgba(13,11,12,.6);backdrop-filter:blur(12px);border:1px solid var(--line);font-size:.82rem}
+.dot{width:8px;height:8px;border-radius:50%;background:#5bd68a;box-shadow:0 0 10px #5bd68a;display:inline-block;margin-right:.5rem}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;gap:2.5rem}.stats{gap:1.5rem}}
+section{padding:110px 0;position:relative}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;margin-bottom:3.5rem;flex-wrap:wrap}
+.sec-head p{max-width:440px;color:var(--muted)}
+.reveal{opacity:0;transform:translateY(30px);transition:1s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center}
+.about-imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-imgs img{border-radius:var(--r);aspect-ratio:3/4;object-fit:cover;width:100%;border:1px solid var(--line)}
+.about-imgs img:nth-child(2){margin-top:60px}
+.pillars{display:grid;gap:1rem;margin-top:2rem}
+.pillar{display:flex;gap:1rem;padding:1.1rem;border:1px solid var(--line);border-radius:14px;background:var(--ink-2)}
+.pillar i{font-style:normal;font-family:var(--mono);color:var(--gold);font-size:.8rem;padding-top:.2rem}
+.pillar b{display:block;font-weight:600}
+.pillar span{color:var(--muted);font-size:.9rem}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+.tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+.tab{padding:.6rem 1.1rem;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ivory-2);cursor:pointer;font-family:var(--sans);font-size:.85rem;transition:.25s}
+.tab.active,.tab:hover{background:var(--gold-2);color:var(--ink);border-color:var(--gold-2)}
+.cat{display:none}.cat.active{display:block;animation:fade .5s}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+.group{margin-bottom:2.5rem}
+.group h3{font-size:1.9rem;margin-bottom:.3rem}
+.group > p{color:var(--muted);font-style:italic;font-family:var(--serif);font-size:1.1rem;margin-bottom:1.2rem}
+.items{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.item{position:relative;padding:1.4rem;border-radius:var(--r);background:linear-gradient(180deg,var(--ink-2),var(--ink));border:1px solid var(--line);transition:.3s;display:flex;flex-direction:column;gap:.4rem}
+.item:hover{border-color:rgba(201,164,92,.5);transform:translateY(-3px)}
+.item.rec{border-color:rgba(201,164,92,.45);background:linear-gradient(180deg,rgba(122,31,43,.25),var(--ink))}
+.item .tag{position:absolute;top:1rem;right:1rem;font-family:var(--mono);font-size:.6rem;letter-spacing:.15em;padding:.25rem .55rem;border-radius:6px;background:var(--gold);color:var(--ink)}
+.item b{font-weight:600;font-size:1.02rem;padding-right:96px}
+.item span.d{color:var(--muted);font-size:.88rem;flex:1}
+.price{display:flex;align-items:baseline;gap:.6rem;margin-top:.6rem;padding-top:.8rem;border-top:1px dashed var(--line)}
+.price strong{font-family:var(--serif);font-size:1.8rem;color:var(--gold-2);font-weight:500}
+.price small{font-family:var(--mono);font-size:.66rem;color:var(--muted);letter-spacing:.12em}
+.fine{font-size:.8rem;color:var(--muted);margin-top:1rem;max-width:760px}
+.ai{background:radial-gradient(70% 60% at 50% 0%,rgba(201,164,92,.1),transparent 70%),var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.ai-public{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.ai-card{border:1px solid var(--line);border-radius:24px;padding:2.2rem;background:rgba(13,11,12,.6);box-shadow:var(--glow)}
+.ai-card h3{font-size:2rem;margin:.6rem 0 1rem}
+.phone{font-family:var(--serif);font-size:2.6rem;color:var(--gold-2);display:block;margin:.4rem 0 1.4rem}
+.steps{display:grid;gap:1rem}
+.step{display:flex;gap:1rem;align-items:flex-start}
+.step em{font-style:normal;font-family:var(--mono);font-size:.75rem;width:34px;height:34px;flex:none;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold)}
+.disclaimer{margin-top:1.4rem;padding:.9rem 1rem;border-left:2px solid var(--wine-2);background:rgba(122,31,43,.15);font-size:.82rem;color:var(--ivory-2);border-radius:0 10px 10px 0}
+@media(max-width:900px){.ai-public{grid-template-columns:1fr}}
+#studio{display:none}
+body.doctor #studio{display:block}
+body.doctor #ai-public-view{display:none}
+.studio{display:grid;grid-template-columns:360px 1fr;gap:1.5rem}
+.panel{border:1px solid var(--line);border-radius:20px;background:var(--ink);padding:1.4rem}
+.panel h4{font-family:var(--mono);font-size:.72rem;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:1rem;font-weight:500}
+label{display:block;font-size:.8rem;color:var(--muted);margin:.9rem 0 .35rem}
+select,input[type=text],input[type=password],textarea{width:100%;background:var(--ink-3);border:1px solid var(--line);color:var(--ivory);border-radius:10px;padding:.75rem .85rem;font-family:var(--sans);font-size:.9rem}
+select:focus,input:focus,textarea:focus{outline:none;border-color:var(--gold)}
+.drop{border:1.5px dashed rgba(201,164,92,.4);border-radius:14px;padding:1.6rem 1rem;text-align:center;cursor:pointer;color:var(--muted);font-size:.88rem;transition:.25s}
+.drop:hover{background:rgba(201,164,92,.06);color:var(--ivory)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.seg button{padding:.55rem;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--ivory-2);cursor:pointer;font-size:.8rem;font-family:var(--sans)}
+.seg button.on{background:var(--gold-2);color:var(--ink)}
+.compare{position:relative;border-radius:16px;overflow:hidden;background:var(--ink-3);aspect-ratio:4/5;max-height:640px;margin:0 auto;user-select:none}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+.compare .after-wrap{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
+.compare .handle{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--gold-2);box-shadow:0 0 14px var(--gold)}
+.compare .handle::after{content:"⟷";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;background:var(--gold-2);color:var(--ink);display:grid;place-items:center}
+.compare input[type=range]{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize}
+.lbl{position:absolute;top:12px;font-family:var(--mono);font-size:.65rem;letter-spacing:.15em;padding:.3rem .6rem;border-radius:6px;background:rgba(13,11,12,.7);z-index:2}
+.empty{display:grid;place-items:center;height:100%;color:var(--muted);text-align:center;padding:2rem;font-size:.9rem}
+.loader{position:absolute;inset:0;display:none;place-items:center;background:rgba(13,11,12,.75);z-index:5;text-align:center;font-family:var(--mono);font-size:.8rem;color:var(--gold-2)}
+.loader.on{display:grid}
+.spin{width:46px;height:46px;border-radius:50%;border:2px solid var(--line);border-top-color:var(--gold-2);animation:sp 1s linear infinite;margin:0 auto 1rem}
+@keyframes sp{to{transform:rotate(360deg)}}
+.out-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
+.analysis{font-size:.9rem;color:var(--ivory-2);white-space:pre-wrap}
+.sug{display:flex;justify-content:space-between;gap:1rem;padding:.85rem 0;border-bottom:1px solid var(--line);font-size:.9rem}
+.sug b{display:block;font-weight:600}
+.sug span{color:var(--muted);font-size:.82rem}
+.sug strong{font-family:var(--serif);color:var(--gold-2);font-size:1.3rem;white-space:nowrap;font-weight:500}
+.total{display:flex;justify-content:space-between;padding-top:1rem;font-weight:600}
+.total strong{font-family:var(--serif);font-size:1.6rem;color:var(--gold-2)}
+.status{font-family:var(--mono);font-size:.72rem;color:var(--muted);margin-top:.8rem;min-height:1em}
+.row{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem}
+video.frame-pick{border-radius:10px;margin-top:.6rem;width:100%}
+@media(max-width:1000px){.studio{grid-template-columns:1fr}.out-grid{grid-template-columns:1fr}}
+.results{display:grid;grid-template-columns:.8fr 1.2fr;gap:3rem;align-items:center}
+.vid{border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--glow);max-width:420px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:2rem}
+.gallery img{border-radius:14px;aspect-ratio:1;object-fit:cover;width:100%;border:1px solid var(--line)}
+@media(max-width:900px){.results{grid-template-columns:1fr}}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.c-card{padding:2rem;border-radius:22px;border:1px solid var(--line);background:var(--ink)}
+.c-card a.big{display:block;font-family:var(--serif);font-size:2rem;color:var(--gold-2);margin:.5rem 0 1rem}
+.map{border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:360px}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;filter:invert(.92) hue-rotate(180deg) saturate(.6)}
+@media(max-width:900px){.contact{grid-template-columns:1fr}}
+footer{padding:50px 0 110px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem}
+.foot{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:center}
+.foot img{height:56px;width:auto}
+.doc-link{background:none;border:none;color:var(--muted);font-family:var(--mono);font-size:.7rem;cursor:pointer;letter-spacing:.1em}
+.doc-link:hover{color:var(--gold)}
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px -5px rgba(37,211,102,.5);transition:.3s}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:30px;height:30px;fill:#fff}
+.modal{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);display:none;place-items:center;padding:20px}
+.modal.on{display:grid}
+.modal .box{width:100%;max-width:420px;background:var(--ink-2);border:1px solid var(--line);border-radius:22px;padding:2rem}
+.modal h3{font-size:1.8rem;margin-bottom:.4rem}
+.err{color:#ff8b8b;font-size:.82rem;margin-top:.6rem;min-height:1em}
+.doc-bar{display:none;position:fixed;top:76px;left:0;right:0;z-index:40;background:var(--wine);color:var(--ivory);font-size:.8rem;text-align:center;padding:.5rem}
+body.doctor .doc-bar{display:block}
+/* ===== Ajustes generales ===== */
+.about-img{border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--glow);aspect-ratio:3/4;max-height:640px}
+.about-img img{width:100%;height:100%;object-fit:cover}
+.hero-media img{object-position:50% 20%}
+.ig-card{display:flex;align-items:center;gap:1rem;padding:1.2rem;border:1px solid var(--line);border-radius:18px;background:var(--ink-2);margin-top:2rem}
+.ig-card .ig-ico{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(135deg,var(--wine),var(--gold));flex:none}
+.ig-card .ig-ico svg{width:26px;height:26px;fill:var(--ivory)}
+input[type=date],input[type=number],input[type=tel],input[type=email],input[type=search]{width:100%;background:var(--ink-3);border:1px solid var(--line);color:var(--ivory);border-radius:10px;padding:.75rem .85rem;font-family:var(--sans);font-size:.9rem;color-scheme:dark}
+input[type=date]:focus,input[type=number]:focus,input[type=tel]:focus,input[type=email]:focus,input[type=search]:focus{outline:none;border-color:var(--gold)}
+.btn-sm{padding:.55rem .95rem;font-size:.8rem}
+.btn-wine{background:var(--wine);color:var(--ivory);border-color:rgba(255,255,255,.08)}
+.btn-wine:hover{background:var(--wine-2)}
+.btn-wa{background:#25d366;color:#06240f}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 40px -12px rgba(37,211,102,.6)}
+.hint{font-size:.8rem;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.8rem}
+.chip{padding:.5rem .85rem;border-radius:999px;border:1px solid var(--line);background:var(--ink-3);color:var(--ivory-2);font-size:.82rem;cursor:pointer;font-family:var(--sans);text-align:left}
+.chip:hover,.chip.on{border-color:var(--gold);color:var(--gold-2)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%) translateY(20px);z-index:300;background:var(--ink-3);border:1px solid var(--line);color:var(--ivory);padding:.85rem 1.2rem;border-radius:14px;font-size:.88rem;opacity:0;pointer-events:none;transition:.3s;max-width:min(92vw,520px);box-shadow:0 20px 50px -20px #000}
+.toast.on{opacity:1;transform:translateX(-50%)}
+.toast.bad{border-color:var(--wine-2)}
+
+/* ===== Agenda pública ===== */
+.agenda{display:grid;grid-template-columns:.85fr 1.15fr;gap:2.5rem;align-items:start}
+@media(max-width:900px){.agenda{grid-template-columns:1fr}}
+.stepper{display:flex;gap:.4rem;margin-bottom:1.4rem;flex-wrap:wrap}
+.stepper span{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;padding:.35rem .7rem;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.stepper span.on{background:var(--gold-2);color:var(--ink);border-color:var(--gold-2)}
+.stepper span.done{color:var(--gold-2);border-color:rgba(201,164,92,.5)}
+.bk-card{border:1px solid var(--line);border-radius:24px;padding:1.6rem;background:rgba(13,11,12,.6);box-shadow:var(--glow)}
+.bk-step{display:none}.bk-step.on{display:block;animation:fade .4s}
+.bk-step h3{font-size:1.7rem;margin-bottom:.8rem}
+.cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem}
+.cal-head b{font-family:var(--serif);font-size:1.4rem;font-weight:500}
+.cal-nav{background:var(--ink-3);border:1px solid var(--line);color:var(--ivory);width:38px;height:38px;border-radius:10px;cursor:pointer;font-size:1rem}
+.cal-nav:disabled{opacity:.3;cursor:not-allowed}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}
+.cal .dow{font-family:var(--mono);font-size:.62rem;color:var(--muted);text-align:center;padding:.3rem 0;letter-spacing:.1em}
+.cal button{aspect-ratio:1;border-radius:10px;border:1px solid var(--line);background:var(--ink-3);color:var(--ivory);cursor:pointer;font-family:var(--sans);font-size:.88rem;position:relative}
+.cal button:hover:not(:disabled){border-color:var(--gold)}
+.cal button.sel{background:var(--gold-2);color:var(--ink);border-color:var(--gold-2);font-weight:700}
+.cal button:disabled{opacity:.28;cursor:not-allowed;background:transparent}
+.cal button.full:disabled{opacity:.55;text-decoration:line-through;color:var(--wine-2)}
+.cal .empty-cell{visibility:hidden}
+.legend{display:flex;gap:1rem;flex-wrap:wrap;margin-top:.8rem;font-size:.75rem;color:var(--muted)}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:.35rem;vertical-align:middle}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px;margin-top:.6rem}
+.slots button{padding:.8rem .4rem;border-radius:10px;border:1px solid var(--line);background:var(--ink-3);color:var(--ivory);cursor:pointer;font-family:var(--sans);font-weight:600;font-size:.9rem;white-space:nowrap}
+.slots button:hover:not(:disabled){border-color:var(--gold)}
+.slots button.sel{background:var(--gold-2);color:var(--ink);border-color:var(--gold-2)}
+.slots button:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+.summary{border:1px dashed var(--line);border-radius:14px;padding:1rem;margin:1rem 0;display:grid;gap:.35rem;font-size:.92rem}
+.summary b{color:var(--gold-2);font-weight:600}
+.notice{margin-top:1rem;padding:1rem 1.1rem;border-left:3px solid #25d366;background:rgba(37,211,102,.08);border-radius:0 12px 12px 0;font-size:.88rem;color:var(--ivory)}
+.notice strong{color:#7ef0a8}
+.bk-actions{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.2rem}
+.ai-box{border:1px solid var(--line);border-radius:16px;padding:1rem;margin-top:1rem;background:var(--ink-2)}
+.ai-reply{font-size:.88rem;color:var(--ivory-2);margin-top:.6rem}
+.ok-ico{width:64px;height:64px;border-radius:50%;display:grid;place-items:center;background:rgba(37,211,102,.15);color:#7ef0a8;font-size:1.8rem;margin-bottom:1rem}
+
+/* ===== Panel médico ===== */
+#panel{position:fixed;inset:0;z-index:120;background:var(--ink);display:none;overflow-y:auto}
+body.doctor #panel{display:block}
+body.doctor{overflow:hidden}
+.p-top{position:sticky;top:0;z-index:5;background:rgba(13,11,12,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.p-top-in{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:64px}
+.p-top img{height:36px}
+.p-tabs{display:flex;gap:.3rem;overflow-x:auto;padding:0 0 .7rem;scrollbar-width:none}
+.p-tabs button{flex:none;padding:.55rem 1rem;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ivory-2);font-family:var(--sans);font-size:.84rem;cursor:pointer}
+.p-tabs button.on{background:var(--gold-2);color:var(--ink);border-color:var(--gold-2)}
+.p-body{padding-top:1.6rem;padding-bottom:6rem}
+.p-view{display:none}.p-view.on{display:block;animation:fade .35s}
+.p-h{display:flex;justify-content:space-between;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.p-h h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.banner{padding:.9rem 1.1rem;border-radius:14px;border:1px solid rgba(201,164,92,.35);background:rgba(201,164,92,.08);font-size:.86rem;margin-bottom:1.2rem}
+.banner.bad{border-color:rgba(163,45,61,.6);background:rgba(122,31,43,.18)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+@media(max-width:900px){.grid2{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.grid3{grid-template-columns:1fr}}
+.appt{display:grid;grid-template-columns:70px 1fr auto;gap:1rem;align-items:center;padding:1rem;border:1px solid var(--line);border-radius:14px;background:var(--ink-2);margin-bottom:.6rem}
+.appt .t{font-family:var(--mono);color:var(--gold-2);font-size:1rem}
+.appt b{display:block}
+.appt small{color:var(--muted);font-size:.8rem}
+.appt .acts{display:flex;gap:.4rem;flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:640px){.appt{grid-template-columns:56px 1fr}.appt .acts{grid-column:1/-1;justify-content:flex-start}}
+.day-h{font-family:var(--serif);font-size:1.3rem;margin:1.4rem 0 .6rem;color:var(--ivory-2)}
+.badge{display:inline-block;font-family:var(--mono);font-size:.6rem;letter-spacing:.1em;padding:.2rem .5rem;border-radius:6px;margin-left:.4rem;vertical-align:middle}
+.b-PENDIENTE{background:rgba(201,164,92,.18);color:var(--gold-2)}
+.b-CONFIRMADA{background:rgba(37,211,102,.15);color:#7ef0a8}
+.b-CANCELADA,.b-EXPIRADA,.b-NO{background:rgba(163,45,61,.25);color:#ff9aa6}
+.b-ASISTIÓ{background:rgba(120,160,255,.15);color:#a9c1ff}
+.list-item{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:.9rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--ink-2);margin-bottom:.5rem;cursor:pointer;width:100%;color:var(--ivory);font-family:var(--sans);text-align:left}
+.list-item:hover{border-color:var(--gold)}
+.list-item small{color:var(--muted)}
+/* Encuesta */
+.sv-sec{border:1px solid var(--line);border-radius:16px;background:var(--ink-2);margin-bottom:.8rem;overflow:hidden}
+.sv-sec summary{cursor:pointer;padding:1rem 1.2rem;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.sv-sec summary::-webkit-details-marker{display:none}
+.sv-sec summary::after{content:"+";color:var(--gold);font-family:var(--mono)}
+.sv-sec[open] summary::after{content:"–"}
+.sv-sec .sv-in{padding:0 1.2rem 1.2rem;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.2rem 1rem}
+.sv-sec .full{grid-column:1/-1}
+.checks{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.3rem}
+.checks label{margin:0;display:inline-flex;align-items:center;gap:.4rem;padding:.45rem .7rem;border:1px solid var(--line);border-radius:999px;font-size:.8rem;color:var(--ivory-2);cursor:pointer;background:var(--ink-3)}
+.checks input{accent-color:var(--gold)}
+.checks label:has(input:checked){border-color:var(--gold);color:var(--gold-2)}
+.cb-line{display:flex;gap:.6rem;align-items:flex-start;font-size:.86rem;color:var(--ivory-2);margin:.6rem 0}
+.cb-line input{margin-top:.25rem;accent-color:var(--gold)}
+/* Wizard modelación */
+.wz-steps{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.wz-steps button{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;padding:.45rem .8rem;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.wz-steps button.on{background:var(--gold-2);color:var(--ink);border-color:var(--gold-2)}
+.wz{display:none}.wz.on{display:block;animation:fade .35s}
+.pt-chip{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.8rem 1rem;border-radius:14px;border:1px solid rgba(201,164,92,.4);background:rgba(201,164,92,.07);margin-bottom:1rem;font-size:.9rem}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media(max-width:800px){.photos{grid-template-columns:1fr}}
+.ph{border:1px solid var(--line);border-radius:16px;background:var(--ink-2);padding:1rem}
+.ph .prev{aspect-ratio:4/5;border-radius:12px;background:var(--ink-3);display:grid;place-items:center;overflow:hidden;color:var(--muted);font-size:.8rem;text-align:center;margin-top:.6rem;cursor:pointer}
+.ph .prev img{width:100%;height:100%;object-fit:cover}
+.alerts{display:grid;gap:.5rem;margin-top:.6rem}
+.alert{padding:.7rem .9rem;border-radius:10px;font-size:.84rem;border-left:3px solid}
+.alert.alto{border-color:#ff6b7d;background:rgba(163,45,61,.2)}
+.alert.medio{border-color:var(--gold);background:rgba(201,164,92,.1)}
+.alert.info{border-color:#7aa2ff;background:rgba(120,160,255,.08)}
+/* Visor de análisis */
+.viewer{position:relative;border-radius:14px;overflow:hidden;background:var(--ink-3);user-select:none;touch-action:none;display:inline-block;max-width:100%}
+.viewer img{display:block;max-width:100%;max-height:70vh}
+.ov{position:absolute;inset:0;pointer-events:none}
+.ov .hl,.ov .vl{position:absolute;pointer-events:auto}
+.ov .hl{left:0;right:0;height:18px;margin-top:-9px;cursor:ns-resize}
+.ov .vl{top:0;bottom:0;width:18px;margin-left:-9px;cursor:ew-resize}
+.ov .hl::before{content:"";position:absolute;left:0;right:0;top:8px;border-top:1.5px dashed var(--gold-2)}
+.ov .vl::before{content:"";position:absolute;top:0;bottom:0;left:8px;border-left:1.5px dashed #7ef0a8}
+.ov .mid{position:absolute;top:0;bottom:0;border-left:1.5px solid #ff9aa6;opacity:.85}
+.ov .tag{position:absolute;font-family:var(--mono);font-size:.58rem;padding:.1rem .35rem;border-radius:4px;background:rgba(13,11,12,.75);color:var(--gold-2);white-space:nowrap;pointer-events:none}
+.ov .dz{position:absolute;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;pointer-events:auto;cursor:help}
+.ov .dz.toxina{background:rgba(255,80,110,.35);border:2px solid #ff6b7d}
+.ov .dz.ah{background:rgba(255,170,40,.35);border:2px solid #ffb347}
+.ov .dz span{position:absolute;left:30px;top:2px;font-size:.6rem;font-family:var(--mono);background:rgba(13,11,12,.8);padding:.1rem .3rem;border-radius:4px;white-space:nowrap;color:var(--ivory)}
+.tools{display:flex;flex-wrap:wrap;gap:.4rem;margin:.8rem 0}
+.tools label{margin:0;display:inline-flex;align-items:center;gap:.35rem;font-size:.78rem;color:var(--ivory-2);padding:.4rem .65rem;border:1px solid var(--line);border-radius:999px;cursor:pointer}
+.tools input{accent-color:var(--gold)}
+.ratios{font-family:var(--mono);font-size:.74rem;color:var(--ivory-2);display:grid;gap:.25rem;margin-top:.6rem}
+.ratios b{color:var(--gold-2);font-weight:500}
+.rep h5{font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--gold);text-transform:uppercase;margin:1.3rem 0 .5rem;font-weight:500}
+.rep p,.rep li{font-size:.9rem;color:var(--ivory-2)}
+.rep ul{padding-left:1.1rem;display:grid;gap:.3rem}
+.rep table{width:100%;border-collapse:collapse;font-size:.84rem}
+.rep td,.rep th{border-bottom:1px solid var(--line);padding:.45rem .3rem;text-align:left;vertical-align:top}
+.rep th{color:var(--muted);font-weight:500;font-size:.75rem}
+.kv{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.6rem}
+.kv div{padding:.7rem;border:1px solid var(--line);border-radius:10px;background:var(--ink-3)}
+.kv small{display:block;color:var(--muted);font-size:.7rem;font-family:var(--mono);letter-spacing:.08em}
+.kv b{font-family:var(--serif);font-size:1.3rem;color:var(--gold-2);font-weight:500}
+.visit{border:1px solid var(--line);border-radius:14px;background:var(--ink-2);padding:1rem;margin-bottom:.7rem}
+.visit .imgs{display:flex;gap:.6rem;margin-top:.6rem;flex-wrap:wrap}
+.visit .imgs img{width:140px;border-radius:10px;border:1px solid var(--line)}
+#printArea{display:none}
+@media print{
+  body *{visibility:hidden}
+  #printArea,#printArea *{visibility:visible}
+  #printArea{display:block;position:absolute;left:0;top:0;width:100%;color:#111;background:#fff;font-family:Georgia,serif;padding:20px}
+  #printArea h1{font-size:22px;margin-bottom:4px}
+  #printArea h2{font-size:15px;margin:16px 0 6px;border-bottom:1px solid #999;padding-bottom:3px}
+  #printArea p,#printArea li,#printArea td{font-size:12px;color:#111}
+  #printArea img{max-width:220px;display:inline-block;margin:4px;border:1px solid #ccc}
+  body.doctor #panel{position:static;overflow:visible}
+}
+</style>
+</head>
+<body>
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#inicio"><img src="assets/logo-gold.png" alt="Dr. Javier Flores"></a>
+    <div class="links" id="links">
+      <a href="#nosotros">Consultorio</a><a href="#servicios">Tratamientos</a><a href="#agenda">Agenda</a><a href="#modelacion">Modelación IA</a><a href="#resultados">Resultados</a><a href="#contacto">Contacto</a>
+    </div>
+    <a class="btn btn-gold nav-cta" href="#agenda">Agendar cita</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menú">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="inicio">
+  <div class="grid-bg"></div>
+  <div class="wrap hero-in">
+    <div class="reveal">
+      <span class="eyebrow">Dr. Javier Flores · Medicina estética · Cuautla</span>
+      <h1>La ciencia de<br><span class="it gold">verte natural.</span></h1>
+      <p class="lead">Armonización facial, bioestimulación y medicina antienvejecimiento con criterio médico, análisis facial con inteligencia artificial y resultados que respetan tu identidad.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-gold" href="#agenda">Agenda tu valoración →</a>
+        <a class="btn btn-ghost" href="#servicios">Ver tratamientos</a>
+      </div>
+      <div class="stats">
+        <div><b>25+</b><span>Protocolos</span></div>
+        <div><b>IA</b><span>Modelación facial</span></div>
+        <div><b>100%</b><span>Atención médica</span></div>
+      </div>
+    </div>
+    <div class="hero-media reveal">
+      <div class="scan"></div>
+      <img src="assets/dr-javier-flores.jpg" alt="Dr. Javier Flores, médico cirujano">
+      <div class="badge-float"><span><span class="dot"></span>Dr. Javier Flores · Céd. 14182373</span><span class="eyebrow" style="font-size:.6rem">Médico cirujano</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="nosotros">
+  <div class="wrap about">
+    <div class="about-img reveal"><img src="assets/consultorio.jpg" alt="Consultorio del Dr. Javier Flores en Cuautla" loading="lazy"></div>
+    <div class="reveal">
+      <span class="eyebrow">El consultorio</span>
+      <h2 style="margin:1rem 0 1.2rem">Precisión médica,<br><span class="it gold">estética sin exceso.</span></h2>
+      <p style="color:var(--ivory-2)">Cada tratamiento comienza con una valoración médica completa: historia clínica, análisis de proporciones, calidad de piel y expectativas. Diseñamos un plan personalizado y te mostramos, con modelación por inteligencia artificial, una aproximación de tu resultado.</p>
+      <div class="pillars">
+        <div class="pillar"><i>01</i><div><b>Valoración médica</b><span>Historia clínica, análisis facial y consentimiento informado.</span></div></div>
+        <div class="pillar"><i>02</i><div><b>Productos originales</b><span>Biomédicos de grado médico con trazabilidad.</span></div></div>
+        <div class="pillar"><i>03</i><div><b>Seguimiento</b><span>Guía de cuidados post-tratamiento y revisión de resultados.</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicios" style="background:var(--ink-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Tratamientos & inversión</span><h2 style="margin-top:1rem">Menú de <span class="it gold">servicios</span></h2></div>
+      <p>Precios en MXN, sujetos a valoración médica previa. El costo de biomédicos está integrado salvo se especifique.</p>
+    </div>
+    <div class="tabs reveal" id="tabs"></div>
+    <div id="cats"></div>
+    <p class="fine">Todo procedimiento incluye consentimiento informado y guía de cuidados post-tratamiento. Vigencia de precios: consultar con el consultorio.</p>
+  </div>
+</section>
+
+<section id="agenda">
+  <div class="wrap agenda">
+    <div class="reveal">
+      <span class="eyebrow">Agenda en línea</span>
+      <h2 style="margin:1rem 0 1.2rem">Reserva tu cita<br><span class="it gold">en 4 pasos.</span></h2>
+      <p style="color:var(--ivory-2);max-width:460px">Elige tu procedimiento, el día y la hora disponibles. Atendemos de <b>lunes a sábado de 8:00 a 18:00 h</b>.</p>
+      <div class="notice" style="max-width:460px"><strong>Importante:</strong> para finalizar su proceso de cita, se le redirigirá al chat de WhatsApp para que envíe los datos de su cita. <strong>Si no envía el mensaje, la cita no quedará completamente agendada.</strong></div>
+    </div>
+    <div class="bk-card reveal" id="booking">
+      <div class="stepper" id="bkStepper"><span class="on">1 · PROCEDIMIENTO</span><span>2 · FECHA</span><span>3 · HORA</span><span>4 · DATOS</span></div>
+
+      <div class="bk-step on" data-s="1">
+        <h3>¿Qué procedimiento te interesa?</h3>
+        <label for="bkTreat">Procedimiento</label>
+        <select id="bkTreat"></select>
+        <div class="ai-box">
+          <span class="eyebrow" style="font-size:.62rem">✦ Asistente IA · opcional</span>
+          <label for="bkAiText" style="margin-top:.5rem">¿No sabes cuál elegir? Cuéntanos qué te gustaría mejorar</label>
+          <textarea id="bkAiText" rows="2" maxlength="600" placeholder="Ej. tengo arrugas en la frente y quiero verme descansada"></textarea>
+          <div class="row" style="margin-top:.6rem"><button class="btn btn-ghost btn-sm" id="bkAiBtn" type="button">Sugerir tratamiento</button></div>
+          <div class="ai-reply" id="bkAiReply"></div>
+          <div class="chips" id="bkAiChips"></div>
+        </div>
+        <div class="bk-actions"><button class="btn btn-gold" id="bkNext1" type="button">Continuar →</button></div>
+      </div>
+
+      <div class="bk-step" data-s="2">
+        <h3>Elige el día</h3>
+        <div class="cal-head"><button class="cal-nav" id="calPrev" type="button" aria-label="Mes anterior">‹</button><b id="calTitle"></b><button class="cal-nav" id="calNext" type="button" aria-label="Mes siguiente">›</button></div>
+        <div class="cal" id="cal"></div>
+        <div class="legend"><span><i style="background:var(--ink-3);border:1px solid var(--line)"></i>Disponible</span><span><i style="background:var(--wine-2)"></i>Sin espacio</span><span><i style="background:transparent;border:1px solid var(--line);opacity:.4"></i>No laborable</span></div>
+        <p class="hint" id="calMsg" style="margin-top:.6rem"></p>
+        <div class="bk-actions"><button class="btn btn-ghost" data-back="1" type="button">← Atrás</button></div>
+      </div>
+
+      <div class="bk-step" data-s="3">
+        <h3>Elige la hora</h3>
+        <p class="hint" id="slotDay"></p>
+        <div class="slots" id="slots"></div>
+        <div class="bk-actions"><button class="btn btn-ghost" data-back="2" type="button">← Cambiar día</button></div>
+      </div>
+
+      <div class="bk-step" data-s="4">
+        <h3>Tus datos</h3>
+        <div class="grid2">
+          <div><label for="bkName">Nombre completo</label><input type="text" id="bkName" maxlength="80" autocomplete="name"></div>
+          <div><label for="bkPhone">WhatsApp (10 dígitos)</label><input type="tel" id="bkPhone" maxlength="14" inputmode="numeric" autocomplete="tel"></div>
+        </div>
+        <label for="bkNotes">Comentario (opcional)</label>
+        <input type="text" id="bkNotes" maxlength="200" placeholder="Ej. es mi primera vez">
+        <div class="summary" id="bkSummary"></div>
+        <div class="notice"><strong>Para finalizar su proceso de cita, se le redirigirá al chat de WhatsApp</strong> para que envíe los datos de su cita. Si no envía el mensaje, la cita no quedará completamente agendada.</div>
+        <label class="cb-line"><input type="checkbox" id="bkOk"> Acepto que mis datos se usen únicamente para gestionar mi cita.</label>
+        <p class="err" id="bkErr"></p>
+        <div class="bk-actions">
+          <button class="btn btn-ghost" data-back="3" type="button">← Atrás</button>
+          <button class="btn btn-wa" id="bkSend" type="button">Apartar y enviar por WhatsApp</button>
+        </div>
+      </div>
+
+      <div class="bk-step" data-s="5">
+        <div class="ok-ico">✓</div>
+        <h3>¡Casi listo! Envía el mensaje</h3>
+        <p style="color:var(--ivory-2)">Apartamos tu horario. <b>Tu cita queda agendada cuando envíes el mensaje de WhatsApp</b> que se abrirá con tus datos.</p>
+        <div class="summary" id="bkDone"></div>
+        <div class="bk-actions"><a class="btn btn-wa" id="bkWaLink" href="#" target="_blank" rel="noopener">Abrir WhatsApp y enviar</a><button class="btn btn-ghost" id="bkAgain" type="button">Agendar otra cita</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="modelacion" class="ai">
+  <div class="wrap">
+    <div class="ai-public">
+      <div class="reveal">
+        <span class="eyebrow">Tecnología · Modelación con IA</span>
+        <h2 style="margin:1rem 0 1.2rem">Visualiza tu resultado<br><span class="it gold">antes del tratamiento.</span></h2>
+        <p style="color:var(--ivory-2);max-width:500px">Durante tu consulta, el Dr. Javier Flores analiza tu rostro con inteligencia artificial: proporciones, simetría, calidad de piel y zonas anatómicas de seguridad. Después genera una modelación aproximada del resultado y un plan personalizado.</p>
+        <div class="steps" style="margin-top:2rem">
+          <div class="step"><em>01</em><div><b>Historia clínica</b><br><span style="color:var(--muted);font-size:.9rem">Antecedentes, alergias y expectativas.</span></div></div>
+          <div class="step"><em>02</em><div><b>Análisis facial</b><br><span style="color:var(--muted);font-size:.9rem">Tercios, quintos, perfil y piel.</span></div></div>
+          <div class="step"><em>03</em><div><b>Modelación + plan</b><br><span style="color:var(--muted);font-size:.9rem">Antes/después aproximado y costos.</span></div></div>
+        </div>
+      </div>
+      <div class="ai-card reveal">
+        <span class="eyebrow">Exclusivo en consulta</span>
+        <h3>Para modelaciones, agenda una cita</h3>
+        <a class="phone js-tel" href="tel:5640100596">56 4010 0596</a>
+        <div class="row">
+          <a class="btn btn-gold" href="#agenda">Agendar cita</a>
+          <a class="btn btn-ghost js-ig" href="#" target="_blank" rel="noopener">Instagram</a>
+        </div>
+        <div class="disclaimer">La modelación con IA es una aproximación ilustrativa y no asegura el resultado exacto. Cada organismo responde de forma distinta; el resultado final depende de la valoración médica, la anatomía y los cuidados de cada paciente.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resultados">
+  <div class="wrap results">
+    <div class="vid reveal"><video src="assets/tratamiento.mp4" poster="assets/video-poster.jpg" autoplay muted loop playsinline controls></video></div>
+    <div class="reveal">
+      <span class="eyebrow">Resultados reales</span>
+      <h2 style="margin:1rem 0 1.2rem">Tratamientos realizados<br><span class="it gold">en consultorio.</span></h2>
+      <p style="color:var(--ivory-2);max-width:520px">Conoce más casos, procedimientos y antes/después en nuestro Instagram oficial.</p>
+      <a class="ig-card js-ig" href="#" target="_blank" rel="noopener">
+        <span class="ig-ico"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM21.9 7.1c-.1-1.6-.4-3-1.6-4.2S17.6 1.3 16 1.2C14.3 1.1 9.7 1.1 8 1.2 6.4 1.3 5 1.6 3.8 2.8S2.2 5.5 2.1 7.1C2 8.8 2 13.4 2.1 15.1c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.7.1 6.3.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.7.1-6.3 0-8zm-2.1 9.8a3.3 3.3 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.3 3.3 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7a3.3 3.3 0 0 1 1.8-1.8C7.9 3.2 10.9 3.3 12.3 3.3s4.4-.1 5.7.4a3.3 3.3 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7z"/></svg></span>
+        <span><b class="js-ig-user">@dr_javierflores</b><br><span class="hint">Ver casos y antes/después en Instagram →</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contacto" style="background:var(--ink-2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="sec-head reveal"><div><span class="eyebrow">Contacto</span><h2 style="margin-top:1rem">Agenda tu <span class="it gold">valoración</span></h2></div></div>
+    <div class="contact">
+      <div class="c-card reveal">
+        <span class="eyebrow">Teléfono & WhatsApp</span>
+        <a class="big js-tel" href="tel:5640100596">56 4010 0596</a>
+        <span class="eyebrow">Horario</span>
+        <p style="margin:.5rem 0 1.2rem;color:var(--ivory-2)">Lunes a sábado · 8:00 a 18:00 h</p>
+        <span class="eyebrow">Dirección</span>
+        <p style="margin:.5rem 0 1.5rem;color:var(--ivory-2)">Av. Insurgentes #151 LB, Col. Emiliano Zapata, Cuautla, Morelos</p>
+        <div class="row">
+          <a class="btn btn-gold" href="#agenda">Agendar en línea</a>
+          <a class="btn btn-ghost js-wa" href="#" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-ghost js-ig" href="#" target="_blank" rel="noopener">Instagram</a>
+          <a class="btn btn-ghost" href="https://maps.google.com/?q=Av.+Insurgentes+151,+Emiliano+Zapata,+Cuautla,+Morelos" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+      <div class="map reveal"><iframe loading="lazy" title="Mapa" src="https://maps.google.com/maps?q=Av.%20Insurgentes%20151%2C%20Emiliano%20Zapata%2C%20Cuautla%2C%20Morelos&z=15&output=embed"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <img src="assets/logo-gold.png" alt="Dr. Javier Flores">
+    <div>Dr. Javier Flores — Médico Cirujano · Céd. 14182373<br>Medicina Estética y Antienvejecimiento · © <span id="yr"></span></div>
+    <button class="doc-link" id="docLink" type="button">ACCESO MÉDICO</button>
+  </div>
+</footer>
+
+<a class="wa js-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.3.6 4.5 1.8 6.4L3 29l7.1-2c1.8 1 3.9 1.5 5.9 1.5 7 0 12.7-5.7 12.7-12.7S23 3 16 3zm0 23.2c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.2 1.1 1.1-4.1-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.1 9.9 10 5 16 5s10.9 4.9 10.9 10.9S22 26.2 16 26.2zm6-8.2c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.4.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.2-1.2 2.9s1.2 3.4 1.4 3.6c.2.2 2.4 3.7 5.9 5.2 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5.3-.8.3-1.4.2-1.5-.1-.1-.3-.2-.6-.4z"/></svg></a>
+
+<!-- ============ LOGIN ============ -->
+<div class="modal" id="mLogin"><div class="box">
+  <span class="eyebrow">Acceso restringido</span>
+  <h3>Panel médico</h3>
+  <p style="color:var(--muted);font-size:.88rem">Agenda, expedientes y modelación con IA. Solo para el Dr. Javier Flores.</p>
+  <label for="pw">Contraseña</label>
+  <input type="password" id="pw" placeholder="••••••••" autocomplete="current-password">
+  <div class="err" id="pwErr"></div>
+  <div class="row"><button class="btn btn-gold" id="pwGo" type="button">Entrar</button><button class="btn btn-ghost" id="pwCancel" type="button">Cancelar</button></div>
+</div></div>
+
+<!-- ============ PANEL MÉDICO ============ -->
+<div id="panel" aria-label="Panel médico">
+  <div class="p-top">
+    <div class="wrap">
+      <div class="p-top-in">
+        <img src="assets/logo-gold.png" alt="Dr. Javier Flores">
+        <div class="row" style="margin:0"><button class="btn btn-ghost btn-sm" id="pClose" type="button">Ver sitio</button><button class="btn btn-wine btn-sm" id="pLogout" type="button">Cerrar sesión</button></div>
+      </div>
+      <div class="p-tabs" id="pTabs">
+        <button class="on" data-v="vAgenda" type="button">📅 Agenda</button>
+        <button data-v="vPacientes" type="button">🗂 Pacientes</button>
+        <button data-v="vModel" type="button">✦ Modelación IA</button>
+        <button data-v="vAjustes" type="button">⚙ Ajustes</button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap p-body">
+    <div id="modeBanner"></div>
+
+    <!-- AGENDA -->
+    <div class="p-view on" id="vAgenda">
+      <div class="p-h"><div><span class="eyebrow">Citas</span><h2>Agenda</h2></div><button class="btn btn-ghost btn-sm" id="agRefresh" type="button">↻ Actualizar</button></div>
+      <div class="grid2">
+        <div class="panel">
+          <h4>Próximas citas</h4>
+          <div id="agList"><p class="hint">Cargando…</p></div>
+        </div>
+        <div>
+          <div class="panel">
+            <h4>Agregar cita (llamada o en persona)</h4>
+            <div class="grid2">
+              <div><label>Fecha</label><input type="date" id="maDate"></div>
+              <div><label>Hora</label><select id="maTime"></select></div>
+            </div>
+            <label>Paciente</label><input type="text" id="maName" maxlength="80">
+            <label>Teléfono</label><input type="tel" id="maPhone" maxlength="14">
+            <label>Procedimiento</label><select id="maTreat"></select>
+            <div class="row"><button class="btn btn-gold btn-sm" id="maSave" type="button">Guardar cita confirmada</button></div>
+          </div>
+          <div class="panel" style="margin-top:1.2rem">
+            <h4>Bloquear días u horas (vacaciones, cursos…)</h4>
+            <div class="grid2">
+              <div><label>Fecha</label><input type="date" id="blDate"></div>
+              <div><label>Hora</label><select id="blTime"></select></div>
+            </div>
+            <label>Motivo (privado)</label><input type="text" id="blWhy" maxlength="120">
+            <div class="row"><button class="btn btn-ghost btn-sm" id="blSave" type="button">Bloquear</button></div>
+            <div id="blList" style="margin-top:1rem"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PACIENTES -->
+    <div class="p-view" id="vPacientes">
+      <div class="p-h"><div><span class="eyebrow">Expedientes</span><h2>Pacientes</h2></div><button class="btn btn-gold btn-sm" id="ptNew" type="button">+ Nuevo paciente</button></div>
+      <div id="ptListView">
+        <input type="search" id="ptSearch" placeholder="Buscar por nombre o teléfono…">
+        <div id="ptList" style="margin-top:1rem"></div>
+      </div>
+      <div id="ptDetail" style="display:none"></div>
+    </div>
+
+    <!-- MODELACIÓN -->
+    <div class="p-view" id="vModel">
+      <div class="p-h"><div><span class="eyebrow">Estudio privado</span><h2>Modelación <span class="it gold">IA</span></h2></div></div>
+      <div class="wz-steps" id="wzSteps">
+        <button class="on" data-w="1" type="button">1 · PACIENTE</button><button data-w="2" type="button">2 · FOTOS</button><button data-w="3" type="button">3 · PROCEDIMIENTO</button><button data-w="4" type="button">4 · RESULTADOS</button>
+      </div>
+
+      <div class="wz on" id="wz1">
+        <div class="grid2">
+          <div class="panel">
+            <h4>Paciente existente (sin encuesta)</h4>
+            <p class="hint">Si ya tiene una modelación o expediente, búscalo por nombre.</p>
+            <input type="search" id="wzSearch" placeholder="Nombre del paciente…" style="margin-top:.8rem">
+            <div id="wzResults" style="margin-top:.8rem"></div>
+          </div>
+          <div class="panel">
+            <h4>Paciente nuevo · encuesta clínica</h4>
+            <p class="hint">Antecedentes, alergias, medicamentos, piel y expectativas. Mejora la precisión del análisis y detecta contraindicaciones.</p>
+            <div class="row"><button class="btn btn-gold" id="wzNew" type="button">Iniciar encuesta</button><button class="btn btn-ghost" id="wzQuick" type="button">Solo nombre (rápido)</button></div>
+          </div>
+        </div>
+        <div id="wzSurvey" style="display:none;margin-top:1.2rem"></div>
+      </div>
+
+      <div class="wz" id="wz2">
+        <div class="pt-chip js-cur"></div>
+        <div class="photos">
+          <div class="ph"><h4 style="font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--gold)">FRONTAL · obligatoria</h4><div class="prev" data-ph="frontal">⬆ Subir foto o video</div></div>
+          <div class="ph"><h4 style="font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--gold)">PERFIL LATERAL · ángulos</h4><div class="prev" data-ph="perfil">⬆ Subir foto o video</div></div>
+          <div class="ph"><h4 style="font-family:var(--mono);font-size:.7rem;letter-spacing:.18em;color:var(--gold)">OBLICUA 3/4 · opcional</h4><div class="prev" data-ph="oblicua">⬆ Subir foto o video</div></div>
+        </div>
+        <input type="file" id="phFile" accept="image/*,video/*" hidden>
+        <div id="vidbox" class="panel" style="display:none;margin-top:1rem">
+          <h4>Elige el mejor cuadro del video</h4>
+          <video id="vsrc" class="frame-pick" controls playsinline muted></video>
+          <div class="row"><button class="btn btn-gold btn-sm" id="grab" type="button">📸 Usar este cuadro</button><button class="btn btn-ghost btn-sm" id="grabCancel" type="button">Cancelar</button></div>
+        </div>
+        <p class="hint" style="margin-top:1rem">Consejo: luz frontal uniforme, sin maquillaje, cabello recogido, expresión neutra. El perfil permite evaluar ángulos faciales y línea E de Ricketts.</p>
+        <div class="row"><button class="btn btn-ghost" data-wgo="1" type="button">← Paciente</button><button class="btn btn-gold" id="wz2Next" type="button">Continuar →</button></div>
+      </div>
+
+      <div class="wz" id="wz3">
+        <div class="pt-chip js-cur"></div>
+        <div class="grid2">
+          <div class="panel">
+            <h4>Procedimiento planeado</h4>
+            <label>Tratamiento</label><select id="treat"></select>
+            <label>Expectativa del resultado</label>
+            <div class="seg" id="intensity"><button data-v="sutil" type="button">Sutil</button><button data-v="moderado" class="on" type="button">Moderado</button><button data-v="marcado" type="button">Marcado</button></div>
+            <div class="grid2">
+              <div><label>Marca del producto</label><input type="text" id="brand" list="brands" placeholder="Ej. Juvéderm Volux"></div>
+              <div><label>Cantidad</label><div style="display:flex;gap:.4rem"><input type="number" id="qty" min="0" step="0.1" placeholder="1"><select id="unit" style="max-width:110px"><option>ml</option><option>U</option><option>viales</option><option>jeringas</option><option>hilos</option><option>sesiones</option></select></div></div>
+            </div>
+            <datalist id="brands"><option>Botox® (Allergan)</option><option>Dysport®</option><option>Xeomin®</option><option>Juvéderm® Voluma</option><option>Juvéderm® Volux</option><option>Juvéderm® Volbella</option><option>Juvéderm® Ultra</option><option>Restylane® Lyft</option><option>Restylane® Kysse</option><option>Belotero®</option><option>Stylage®</option><option>Teosyal®</option><option>Saypha®</option><option>Neuramis®</option><option>Sculptra®</option><option>Radiesse®</option><option>Profhilo®</option><option>Hilos PDO</option></datalist>
+            <label>Zonas / técnica (opcional)</label><input type="text" id="zones" placeholder="Ej. cánula 22G, pómulo lateral bilateral">
+            <label>Notas clínicas (opcional)</label><textarea id="notes" rows="2" placeholder="Ej. conservar asimetría leve, paciente prefiere naturalidad…"></textarea>
+          </div>
+          <div class="panel">
+            <h4>Alertas clínicas automáticas</h4>
+            <p class="hint">Calculadas con la encuesta del paciente (no dependen de la IA).</p>
+            <div class="alerts" id="alerts"></div>
+            <h4 style="margin-top:1.4rem">Motor de imagen</h4>
+            <select id="engine">
+              <option value="auto">Automático (recomendado)</option>
+              <option value="cf">Cloudflare FLUX — gratis</option>
+              <option value="gemini">Google Gemini imagen — requiere facturación</option>
+              <option value="local">Simulación local básica (sin internet)</option>
+            </select>
+            <p class="hint" style="margin-top:.4rem">El análisis clínico siempre usa Gemini (gratis).</p>
+          </div>
+        </div>
+        <div class="row"><button class="btn btn-ghost" data-wgo="2" type="button">← Fotos</button><button class="btn btn-ghost" id="runAna" type="button">Solo análisis</button><button class="btn btn-gold" id="run" type="button">✦ Analizar y generar modelación</button></div>
+        <div class="status" id="status"></div>
+      </div>
+
+      <div class="wz" id="wz4">
+        <div class="pt-chip js-cur"></div>
+        <div class="grid2">
+          <div class="panel">
+            <h4>Antes / Modelación</h4>
+            <div class="compare" id="compare">
+              <div class="empty" id="empty">La modelación aparecerá aquí</div>
+              <img id="imgBefore" alt="Antes" style="display:none">
+              <div class="after-wrap" id="afterWrap" style="display:none"><img id="imgAfter" alt="Modelación"></div>
+              <span class="lbl" style="left:12px;display:none" id="lb1">ANTES</span>
+              <span class="lbl" style="right:12px;display:none;color:var(--gold-2)" id="lb2">MODELACIÓN IA</span>
+              <div class="handle" id="handle" style="display:none"></div>
+              <input type="range" id="slider" min="0" max="100" value="50" style="display:none" aria-label="Comparar">
+              <div class="loader" id="loader"><div><div class="spin"></div><span id="loadtxt">Analizando…</span></div></div>
+            </div>
+            <p class="hint" id="engineUsed" style="margin-top:.5rem"></p>
+            <div class="disclaimer">La modelación es una aproximación generada por IA con fines ilustrativos y no asegura el resultado exacto del tratamiento.</div>
+            <div class="row"><button class="btn btn-ghost btn-sm" id="dl" type="button">⬇ Descargar comparativo</button><button class="btn btn-ghost btn-sm" id="regen" type="button">↻ Otra modelación</button></div>
+          </div>
+          <div class="panel">
+            <h4>Análisis estructural y de piel</h4>
+            <div class="tools" id="viewTools">
+              <select id="vwPhoto" style="width:auto;padding:.4rem .6rem;font-size:.78rem"></select>
+              <label><input type="checkbox" data-ov="mid" checked> Línea media</label>
+              <label><input type="checkbox" data-ov="ter" checked> Tercios</label>
+              <label><input type="checkbox" data-ov="qui"> Quintos</label>
+              <label><input type="checkbox" data-ov="tox"> Peligro toxina</label>
+              <label><input type="checkbox" data-ov="ah"> Peligro AH</label>
+              <select id="vwFilter" style="width:auto;padding:.4rem .6rem;font-size:.78rem">
+                <option value="none">Filtro: original</option><option value="wrinkle">Arrugas (alto contraste)</option><option value="texture">Textura / relieve</option><option value="pigment">Pigmentación / daño solar</option><option value="vascular">Vascular / eritema</option><option value="equalize">Ecualizado</option>
+              </select>
+            </div>
+            <div style="text-align:center"><div class="viewer" id="viewer"><img id="vwImg" alt="Análisis"><div class="ov" id="ov"></div></div></div>
+            <p class="hint">Arrastra las líneas doradas (tercios) y verdes (quintos) a los puntos anatómicos para medir. Las zonas de peligro son orientativas: verifica siempre la anatomía.</p>
+            <div class="ratios" id="ratios"></div>
+          </div>
+        </div>
+        <div class="grid2" style="margin-top:1.2rem">
+          <div class="panel rep"><h4>Impresión diagnóstica IA</h4><div id="report"><p class="hint">Aparecerá después del análisis.</p></div></div>
+          <div class="panel"><h4>Protocolo y plan de inversión</h4><div id="sugs"><p class="hint">Aparecerá después del análisis.</p></div>
+            <div class="row"><button class="btn btn-gold" id="saveVisit" type="button">💾 Guardar en historia clínica</button><button class="btn btn-ghost" id="printVisit" type="button">🖨 Imprimir</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- AJUSTES -->
+    <div class="p-view" id="vAjustes">
+      <div class="p-h"><div><span class="eyebrow">Configuración</span><h2>Ajustes</h2></div></div>
+      <div class="grid2">
+        <div class="panel">
+          <h4>Estado del sistema</h4>
+          <div id="sysStatus" class="ratios" style="font-size:.84rem"></div>
+          <div class="row"><button class="btn btn-ghost btn-sm" id="sysCheck" type="button">Probar conexión</button></div>
+        </div>
+        <div class="panel" id="localKeys">
+          <h4>API key en este dispositivo (solo modo sin servidor)</h4>
+          <p class="hint">Si ya conectaste el servidor de Google, tus keys viven allá y no necesitas esto.</p>
+          <label>Gemini API key</label><input type="password" id="keyIn" placeholder="AIza…">
+          <label>Modelo de análisis</label><input type="text" id="txtModel">
+          <label>Modelo de imagen Gemini</label><input type="text" id="imgModel">
+          <div class="row"><button class="btn btn-gold btn-sm" id="keySave" type="button">Guardar</button></div>
+        </div>
+        <div class="panel">
+          <h4>Respaldo</h4>
+          <p class="hint">Descarga una copia de los expedientes guardados en este dispositivo (modo sin servidor). Con servidor, tus datos ya están en tu Google Sheets y Drive.</p>
+          <div class="row"><button class="btn btn-ghost btn-sm" id="bkExport" type="button">⬇ Exportar</button><button class="btn btn-ghost btn-sm" id="bkImport" type="button">⬆ Importar</button><input type="file" id="bkFile" accept="application/json" hidden></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="printArea"></div>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
